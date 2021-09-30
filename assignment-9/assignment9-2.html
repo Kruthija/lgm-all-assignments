@@ -1,0 +1,31 @@
+<!DOCTYPE>
+ <html lang="en-US">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="x-UA-Compatible"content="IE-edge">
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+         <title>passwordstrength</title>
+     </head>
+     <body>
+         <script type="text/javascript">
+        function pstrong()
+        {
+            var pw;
+        //    var u=document.details.email.value;
+            if(document.passwordstrength.userpass.value.length>5){
+                pw="good";
+            }
+            else{
+                pw="poor";
+            }
+            document.getElementById('mylocation').innerText=pw;
+        }
+
+            </script>
+            <form name="passwordstrength">
+                <!-- userID<input type="text" name="email"><br><br> -->
+               password<input type="password"name="userpass"value="" onkeyup="pstrong()"><br><br>
+             
+                strength:<span id="mylocation">no strength</span>
+            </form>
+     </body></html>
